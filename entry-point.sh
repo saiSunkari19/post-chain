@@ -14,7 +14,7 @@ if [ -z "$2" ]; then
 fi
 
 # Build genesis file incl account for passed address
-coins="100000000000coco,100000000000mdm"
+coins="100000000000000000000coco,100000000000000000000mdm"
 cocod init --chain-id $CHAINID $CHAINID
 cococli keys add validator --keyring-backend="test"
 cocod add-genesis-account validator $coins --keyring-backend="test"
